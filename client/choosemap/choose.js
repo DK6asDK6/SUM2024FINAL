@@ -103,7 +103,7 @@ async function reactOnMessage(src) {
 }
 
 function initCommunication() {
-  socket = new WebSocket("ws://localhost:8000");
+  socket = new WebSocket("ws://0.0.0.0:8000");
 
   socket.onopen = () => {
     console.log("open");
