@@ -111,7 +111,7 @@ export function logOut() {
 }
 
 function initCommunication() {
-  socket = new WebSocket("ws://0.0.0.0:8000");
+  socket = new WebSocket("ws://brook-nettle-devourer.glitch.me");
   let info = document.getElementById("info");
   let st = info.textContent.split("/");
   debugger;
