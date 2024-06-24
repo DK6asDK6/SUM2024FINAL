@@ -111,7 +111,7 @@ export function logOut() {
 }
 
 function initCommunication() {
-  socket = new WebSocket("ws://localhost:8000");
+  socket = new WebSocket("ws://0.0.0.0:8000");
   let info = document.getElementById("info");
   let st = info.textContent.split("/");
   debugger;

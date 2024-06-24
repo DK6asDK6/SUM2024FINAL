@@ -18,10 +18,10 @@ import {
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
 app.use(morgan("common"));
 // app.use(express.multipart());
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const baseURL =
   "mongodb+srv://doadmin:x62jNC54Pi1W3t98@db-mongodb-pml30-2024-12312526.mongo.ondigitalocean.com/admin?tls=true&authSource=admin";

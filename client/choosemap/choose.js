@@ -103,7 +103,7 @@ async function reactOnMessage(src) {
 }
 
 function initCommunication() {
-  socket = new WebSocket("ws://localhost:8000");
+  socket = new WebSocket("ws://brook-nettle-devourer.glitch.me:8000");
 
   socket.onopen = () => {
     console.log("open");

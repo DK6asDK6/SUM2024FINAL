@@ -6,7 +6,7 @@ export default {
     dir: "client/output",
     format: "iife",
     sourcemap: "inline",
-    name: "chsBundled",
+    name: "roomBundled",
   },
   plugins: [terser()],
 };
